@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Muzik OS Hub',
+  title: 'Muzik OS Docs',
   url: 'https://example.invalid',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -8,11 +8,10 @@ module.exports = {
   presets: [['classic', {
     docs: { path: 'content', routeBasePath: 'docs', sidebarPath: require.resolve('./sidebars.js') },
     blog: false,
-    theme: { customCss: require.resolve('./src/css/custom.css') },
   }]],
   themeConfig: { navbar: { title: 'Muzik OS', items: [
-    {to: '/', label: 'Overview', position: 'left'},
     {to: '/docs/intro', label: 'Docs', position: 'left'},
+    {to: '/docs/roadmap', label: 'Roadmap', position: 'left'},
     {href: 'https://github.com/fusumivietnam/muzik-os', label: 'GitHub', position: 'right'}
   ]}}
 };

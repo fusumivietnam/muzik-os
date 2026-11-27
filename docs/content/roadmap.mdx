@@ -1,0 +1,14 @@
+---
+sidebar_position: 3
+---
+import snapshot from '../src/data/roadmap.json';
+
+# Roadmap
+
+See [product-first recovery plan](./recovery.md) for gate order and acceptance.
+
+Snapshot time: {snapshot.generatedAt || 'Not generated yet'}. Open/closed refers to issue state only, not verification or deployment.
+
+{['open','closed'].map(state => <section key={state}><h2>{state === 'open' ? 'Open work' : 'Closed work'}</h2>{snapshot.issues.some(issue => issue.state === state) ? <ul>{snapshot.issues.filter(issue => issue.state === state).map(issue => <li key={issue.number}><a href={issue.url}>#{issue.number} · {issue.title}</a></li>)}</ul> : <p>No items in snapshot.</p>}</section>)}
+
+[Live issues](https://github.com/fusumivietnam/muzik-os/issues) · [Milestones](https://github.com/fusumivietnam/muzik-os/milestones) · [Projects](https://github.com/fusumivietnam/muzik-os/projects) · [CI evidence](https://github.com/fusumivietnam/muzik-os/actions)
