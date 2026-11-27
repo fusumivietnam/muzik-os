@@ -19,3 +19,13 @@ Integrate the pinned official starter first. Review Home, Search, Artist, Releas
 The former [M+ concept and prototype](https://github.com/fusumivietnam/muzik-os/tree/64907e5f20727da0a204040bd548b78ba783cf0d/design/prototype) remain historical reference only. Do not import their CSS or runtime.
 
 Approved concept → review on integrated starter → human acceptance → Playwright baseline from accepted implementation. No preview deployment or production deployment without separate approval.
+
+## Approved integrated Music Platform concept
+
+Public navigation: Home, Search, Artist/Release/Recording indexes and detail, contextual credits and sources, correction form, About/legal. Work and standalone source pages are review candidates, not new independently authorized MVP modules. Public and admin navigate the same stable entity identities and reciprocal relationships.
+
+Listening Panel: show selected recording, artist, linked releases and validated official external links; selection persists across in-app navigation. Do not label selection as playing or simulate progress. No iframe, SDK, autoplay, audio storage or external provider integration in MVP. Missing links show an honest unavailable state. Embeds are deferred to separate provider-rights and implementation approval.
+
+Admin navigation: Overview, Catalog, Sources & Rights, Review, Settings. Prefer contextual entity tabs (overview, relationships, credits, evidence, listening, history where applicable) over a sidebar item per table. Keep native starter auth, settings and appearance. Review links back to entity and evidence; public record links only when published. No draft leakage. See [domain requirements](./domain-requirements.md) for business contracts; exact schema and workflow implementation remain unapproved.
+
+Review end-to-end on actual starter with fictional data: search → release → recording → contributor → source → referenced entity; listening selection survives navigation; correction → internal review → authorized decision → separately authorized publication, with traceable evidence. Test unauthorized access, empty/error states and mobile. No independent prototype or baseline.
