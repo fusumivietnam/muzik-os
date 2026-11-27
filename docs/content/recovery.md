@@ -8,7 +8,7 @@ The Music Website is the primary deliverable. Docusaurus is a supporting static 
 ```mermaid
 flowchart TD
   R0["R0 · Runnable foundation"] --> R1["R1 · Music domain & data"]
-  R1 --> R2["R2 · Approved website prototype"]
+  R1 --> R2["R2 · Starter Native UI review"]
   R2 --> R3["R3 · Music website MVP"]
   R3 --> R4["R4 · Acceptance & release readiness"]
   R4 --> R5["R5 · Separately authorized release"]
@@ -18,8 +18,8 @@ flowchart TD
 | --- | --- |
 | R0 | Official starter revision, committed genuine lockfiles, PostgreSQL migrations/tests, disabled public registration, integrated CI and static docs build; exact PR SHA for review. |
 | R1 | Domain vocabulary, Artist/Release/Recording/Track/Work/Credit relationships, search and corrections rules, provenance and source-rights policy; synthetic fixtures. Schema requires review. |
-| R2 | Music website concept, approved interactive React prototype and CSS tokens; responsive and accessibility states. |
-| R3 | Deliver vertical slices for Home, Search, Artist, Release, Recording, credits, provenance, official listening links, corrections/internal review and legal; test each slice. |
+| R2 | Review UI directly on integrated starter; preserve upstream tokens; responsive and accessibility states; human acceptance before baseline. |
+| R3 | Deliver vertical slices for Home, Search, Artist, Release, Recording, credits, provenance, official listening links and Listening Panel, corrections/internal review and legal; test each slice. |
 | R4 | Aggregate product, design, regression, accessibility, security, data and release readiness evidence. Checks occur in each feature PR, not only here. |
 | R5 | Human acceptance and separate authorization to merge/deploy as applicable; deployment evidence required. |
 

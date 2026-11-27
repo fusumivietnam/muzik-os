@@ -53,3 +53,17 @@ Draft, review decision and published state must be distinct. Publishing requires
 - All: desktop/mobile, keyboard, accessible naming, long Vietnamese names, error/empty states, server validation and relevant regression tests.
 
 These are requirements and scenario references, not passed tests or authorization to implement all modules in R0.
+
+## Approved Product Blueprint direction
+
+Existing MUS-01–10 remain the MVP contract, including selected-recording Listening Panel and verified external links only. The following additions are approved for requirements/backlog preparation, not automatic implementation or new MVP authorization.
+
+| ID | Capability | Scope boundary |
+| --- | --- | --- |
+| MUS-11 | Music Connections | Reciprocal credit/release links within current scope; inferred similarity, group networks and richer discovery require later issue approval. |
+| MUS-12 | Music Identity & Version Explorer | Work/Recording/Release/Track vocabulary and version identity review in R1; standalone Work and version explorer deferred pending scope and schema approval. |
+| MUS-13 | Vietnamese Search & Knowledge | Candidate acceptance for MUS-09: accents, aliases, Unicode and exact identity; wider Vietnam-specific taxonomy/content strategy subject to rights and issue approval. |
+| MUS-14 | SEO & Discoverability | Candidate public-feature acceptance: canonical URL, accurate titles/metadata, public-only sitemap, no draft indexing; implementation approval per issue. |
+| MUS-15 | Music Timeline | Future direction, derived only from sourced dated events with date precision; not MVP expansion. |
+
+Complete Credits maps to MUS-04, Universal Listening Links to MUS-06, Trust Center and Data Quality to MUS-05/10. No new providers, integrations, dedicated trust module or automated duplicate merge authorized. See [business rules](./business-rules.md), [data dictionary](./data-dictionary.md) and [synthetic acceptance scenarios](./synthetic-scenarios.md). Product success hypotheses: search task success, claim evidence coverage, valid official link coverage and correction turnaround; define denominators and privacy before instrumentation. No analytics service approved.

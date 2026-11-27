@@ -19,6 +19,13 @@
 - Done for review: implementation matches scope; targeted checks then appropriate regression; data, accessibility and security checks proportionate to risk; relevant docs updated; exact SHA CI evidence; PR ready for human review. CI success does not imply human acceptance or deployment.
 - On failure diagnose first; do not rerun unchanged failed jobs unless a clear infrastructure fault. Report actual execution, missing runtime/permissions and blockers; never invent tests, logs or results.
 
+## Grounded execution (anti-hallucination)
+- Establish evidence before claims: inspect actual files, pinned upstream API/contracts and current issue; never invent paths, symbols, packages, runtime versions, commands, tool permissions, logs, tests or results. Label unknown, unverified and blocked explicitly.
+- Treat approved requirements and business rules as contracts; proposed ideas, fixture values and inferred relationships are not production facts. Resolve material ambiguity about schema, rights, access or public behavior with the owner before implementation; continue unrelated approved work when safe.
+- No fabricated metadata, credits, citations, provider URLs or source permissions. Public availability is not a license. Fixtures must be visibly synthetic and never promoted to production data.
+- Before edits map scope to requirement/rule IDs and acceptance; reuse actual upstream code. No speculative abstractions, unrelated refactors, additional dependencies/services or unapproved feature expansion. Do not mark work complete or change baselines without evidence. Diagnose failures before retrying.
+- Report changed paths, exact SHA/PR, actual checks and their outcomes, unexecuted checks, blocker and any decision outside explicit guidance. R0 runnable foundation has priority; approved blueprint is direction, not permission to implement later features.
+
 ## Safety and data
 - No self-merge, deployment, preview without separate approval, permission/visibility changes, secrets, data deletion, SSO changes or real data ingestion without source-rights approval.
 - No public registration or audio hosting. Use synthetic fixtures; keep private data, credentials, backups and sensitive vulnerability details out of the public repository. Validate server-side authorization, input, provenance and dependencies as applicable.
