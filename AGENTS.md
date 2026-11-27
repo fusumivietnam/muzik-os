@@ -6,6 +6,9 @@
 - Use ChatGPT Web and GitHub native only. No external AI, agents, dispatcher, AI API or additional tools/services/costs without approval. GitHub Actions is deterministic build/test only, one long-lived workflow, read-only permissions, no pull_request_target, no automatic deployment.
 - Use official Laravel React starter, Laravel-native conventions, PostgreSQL and upstream npm. Verify candidate runtime versions against upstream and actual checks. Docker/Sail only when needed.
 
+## Upstream-first UI (approved)
+- Starter Native supersedes M+. Preserve official starter typography, theme, CSS tokens, shadcn/ui primitives, authentication, appearance and internal app layout. Reuse → configure → extend → create only when necessary. Public layout and music-specific components are the only new UI layers. Review directly on the integrated starter; do not maintain a separate prototype or adopt M+ CSS. Docs retain native Docusaurus Classic. No baseline until human acceptance.
+
 ## Vibe coding delivery
 - Understand outcome, business rules, scope and testable acceptance before implementation. For material UX/UI changes, show a visual concept, obtain approval of React prototype and CSS tokens, then derive Playwright baselines from accepted implementation. Never overwrite approved design or reset baselines to hide defects.
 - Use a stable Feature ID when a feature spans specs, design and evidence; small fixes need only a concise issue. Durable business rules live in specs; executable acceptance lives in Issues. Link rather than duplicate.

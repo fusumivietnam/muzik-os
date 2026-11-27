@@ -1,19 +1,21 @@
 # Design as Code
 
-## Approved direction — M+
+## Approved direction — Starter Native
 
-Muzik Modern Classic is the approved **concept direction**, not an accepted implementation or locked token set.
+Starter Native supersedes M+ by explicit product decision. Preserve the official Laravel React starter typography, appearance, CSS tokens and shadcn/ui defaults. No separate theme or UI framework.
 
 | Surface | Direction |
 | --- | --- |
-| Music public website | M+ Modern Classic: F Signature for discovery; G Library for search and knowledge; J Liner Notes for release, recording and credits; M for shared layout. |
-| Internal admin | Upstream shadcn/ui defaults; functional tables, forms and review; server authorization required. |
-| Documentation | Native Docusaurus Classic theme, native navigation/sidebar, light/dark and Mermaid; no custom dashboard. |
+| Music website | Native components, new public layout and music-specific artwork, catalog and metadata components only. |
+| Internal admin | Existing app layout, sidebar, auth and settings; extend only for approved catalog and review functions. |
+| Docs | Native Docusaurus Classic theme, navigation, sidebar, dark mode and Mermaid. |
 
-Use a single public design language: quiet editorial typography, artwork, whitespace, fine rules and readable metadata. Avoid SaaS dashboard aesthetics, heavy shadows, gradients and decorative animations. Candidate colors and system serif/sans fonts in the prototype are exploratory only; validate Vietnamese glyphs, contrast and responsive behavior before approval.
+Reuse, configure, extend, create only if necessary. Do not copy the starter dashboard layout into public discovery. Retain native visual primitives and build a content-focused public header/footer, responsive artwork grid, search and entity details. No public registration or hosted audio.
 
-## Prototype review
+## Review on the actual starter
 
-[React prototype source](https://github.com/fusumivietnam/muzik-os/tree/r0/1-laravel-react-bootstrap/design/prototype) is isolated from production routes and uses fictional entities and original geometric CSS artwork. Review Home, Search, Artist, Release and Recording at desktop (1440px), mobile (390px), and narrow (320px), light/dark, keyboard focus, no-result state, long names and overflow. The local prototype is not a deployed preview or approved visual baseline.
+Integrate the pinned official starter first. Review Home, Search, Artist, Release and Recording directly in the Laravel/Inertia React application using fictional fixtures at 1440, 390 and 320 CSS pixels; check light/dark/system appearance, keyboard focus, long names, empty states and overflow. No separate maintained prototype. Actual UI review is pending, and no new design tokens or baseline are authorized.
 
-Concept → reviewed React prototype and CSS tokens → accepted implementation → Playwright baseline. Never update a baseline to hide defects. No palette, typography, logo or baseline is locked by concept approval.
+The former [M+ concept and prototype](https://github.com/fusumivietnam/muzik-os/tree/64907e5f20727da0a204040bd548b78ba783cf0d/design/prototype) remain historical reference only. Do not import their CSS or runtime.
+
+Approved concept → review on integrated starter → human acceptance → Playwright baseline from accepted implementation. No preview deployment or production deployment without separate approval.
